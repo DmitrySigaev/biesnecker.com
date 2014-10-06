@@ -2,6 +2,8 @@
 layout: post
 title: Swapping variables with XOR
 image: /public/images/xor.jpg
+summary: >
+    Most folks have seen the trick where you use three XORs to swap the contents of two variables, and then properly dismissed it as black magic. It's not really all that complex, though, once you dig into it, so I started digging.
 ---
 
 I remember a long, long time ago a funny bit of bitwise magic that swapped the values of two integers in place without creating a third (probably in C, or some other language that doesn't support multiple assignment). It looks a little like this:

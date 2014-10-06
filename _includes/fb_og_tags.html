@@ -6,6 +6,12 @@
 {% else %}
     <meta property="og:type" content="article" />
     <meta property="article:author" content="https://facebook.com/biesnecker" />
+    {% if page.title %}
+    <meta property="og:title" content="{{ page.title }}" />
+    {% endif %}
+    {% if page.summary %}
+    <meta property="og:description" content="{{ page.summary }}" />
+    {% endif %}
 {% endif %}
 {% if page.image %}
 <meta property="og:image" content="{{ site.url }}{{ page.image }}" />
