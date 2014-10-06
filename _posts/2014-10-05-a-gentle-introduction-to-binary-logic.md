@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Boolean logic for programmers
+image: /public/images/george_boole.jpg
 ---
 
 One of my (many) weaknesses as a programmer has long been a soft understanding of binary math. I've always known the basics, but I've never gotten my hands dirty enough to really feel comfortable with it. A few months ago I resolved to change that, and a few weeks ago I actually began changing it. I'm still not a pro, but I feel like I understand it a lot better than I did.

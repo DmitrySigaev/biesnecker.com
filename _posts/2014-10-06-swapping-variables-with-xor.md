@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Swapping variables with XOR
+image: /public/images/xor.jpg
 ---
 
 I remember a long, long time ago a funny bit of bitwise magic that swapped the values of two integers in place without creating a third (probably in C, or some other language that doesn't support multiple assignment). It looks a little like this:
