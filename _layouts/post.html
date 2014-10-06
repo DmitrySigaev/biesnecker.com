@@ -6,6 +6,16 @@ layout: default
   <h1 class="post-title">{{ page.title }}</h1>
   <span class="post-date">{{ page.date | date_to_string }}</span>
   {{ content }}
+
+  <br />
+
+  <div class="message">
+    <p>Did you enjoy this post? If so, you should <a href="https://facebook.com/biesnecker">follow me on Facebook</a>, because I'm full of good ideas. If not, please <a href="mailto:jbiesnecker@gmail.com">let me know why</a>. Thank you!</p>
+    <div class="fb-follow" data-href="https://www.facebook.com/biesnecker" data-width="100%" data-colorscheme="light" data-layout="standard" data-show-faces="true"></div>
+  </div>
+
+  <h3>Comments</h3>
+  <div class="fb-comments" data-href="{{ site.url }}{{ page.url }}" data-numposts="5" data-colorscheme="light" data-width="100%"></div>
 </div>
 
 {% comment %}
@@ -27,11 +37,3 @@ layout: default
 </div>
 {% endif %}
 {% endcomment %}
-
-<div class="message">
-  Did you enjoy this post? If so, you should <a href="https://facebook.com/biesnecker">follow me on Facebook</a>, because I'm full of good ideas. If not, please <a href="mailto:jbiesnecker@gmail.com">let me know why</a>. Thank you!
-</div>
-
-<br />
-
-<div class="fb-comments" data-href="{{ site.url }}{{ page.url }}" data-numposts="5" data-colorscheme="light" data-width="100%"></div>
