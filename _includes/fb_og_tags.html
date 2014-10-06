@@ -1,0 +1,14 @@
+<meta property="fb:app_id" content="737512829662824" />
+<meta property="og:site_name" content="John Biesnecker's Blog" />
+<meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+{% if page.title == "Home" %}
+    <meta property="og:type" content="website" />
+{% else %}
+    <meta property="og:type" content="article" />
+    <meta property="article:author" content="https://facebook.com/biesnecker" />
+{% endif %}
+{% if page.image %}
+<meta property="og:image" content="{{ site.url }}{{ page.image }}" />
+{% else %}
+<meta property="og:image" content="{{ site.url }}/public/images/default_og.jpg" />
+{% endif %}
