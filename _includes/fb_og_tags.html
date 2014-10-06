@@ -7,10 +7,10 @@
     <meta property="og:type" content="article" />
     <meta property="article:author" content="https://facebook.com/biesnecker" />
     {% if page.title %}
-    <meta property="og:title" content="{{ page.title }}" />
+    <meta property="og:title" content="{{ page.title | xml_escape }}" />
     {% endif %}
     {% if page.summary %}
-    <meta property="og:description" content="{{ page.summary }}" />
+    <meta property="og:description" content="{{ page.summary | xml_escape }}" />
     {% endif %}
 {% endif %}
 {% if page.image %}
