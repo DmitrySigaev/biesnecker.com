@@ -15,6 +15,7 @@ description:         'Ideas and opinions about people, pleaces, and things (most
 url:                 http://biesnecker.com
 baseurl:             /
 paginate:            10
+future:              false
 
 # About/contact
 author:
