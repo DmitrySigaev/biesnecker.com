@@ -12,7 +12,7 @@ Boolean logic is a good starting point because *True* and *False* maps nicely to
 
 Below I'm going to use [truth tables](http://en.wikipedia.org/wiki/Truth_table) to show how each operator works, because I found them super useful in understanding what was going on, especially
 
-#### Conjuction (AND)
+#### Conjunction (AND)
 
 Pretty simple for anyone who has ever written code (or, like, spoken a human language). AND is True if both *P* and *Q* are True, otherwise it's False. The **&and;** symbol is used for this in math, while some variation of **&amp;** or **and** is used in most programming languages.
 
@@ -40,7 +40,7 @@ Pretty simple for anyone who has ever written code (or, like, spoken a human lan
 
 #### Disjunction (OR)
 
-OR is like AND's slightly cooler and more permissive little brother. While AND requires both *P* and *Q* to be True in order to be True, OR is cool with returning True if either of them are True, and is only False if both *P* and *Q* are False. The **&or;** symbol is normally used in math, while some variatin of **|** or **or** is used in most programming languages.
+OR is like AND's slightly cooler and more permissive little brother. While AND requires both *P* and *Q* to be True in order to be True, OR is cool with returning True if either of them are True, and is only False if both *P* and *Q* are False. The **&or;** symbol is normally used in math, while some variation of **|** or **or** is used in most programming languages.
 
 <table>
     <thead>
