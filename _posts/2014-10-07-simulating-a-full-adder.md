@@ -45,10 +45,10 @@ As I've said before, I think truth tables are a great way to grok what's going o
             <td>0</td><td>0</td><td>1</td><td>1</td><td>0</td>
         </tr>
         <tr>
-            <td>1</td><td>0</td><td>1</td><td>1</td><td>0</td>
+            <td>1</td><td>0</td><td>1</td><td>0</td><td>1</td>
         </tr>
         <tr>
-            <td>0</td><td>1</td><td>1</td><td>1</td><td>0</td>
+            <td>0</td><td>1</td><td>1</td><td>0</td><td>1</td>
         </tr>
         <tr>
             <td>1</td><td>1</td><td>1</td><td>1</td><td>1</td>
