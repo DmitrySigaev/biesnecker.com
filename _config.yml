@@ -16,6 +16,7 @@ url:                 http://biesnecker.com
 baseurl:             /
 paginate:            10
 future:              false
+safe:                false
 
 # About/contact
 author:
@@ -27,8 +28,9 @@ author:
 version:             1.0.0
 
 # Exclude
-exclude:             ['publish.sh']
+exclude:             ['publish.sh', 'push.sh']
 
 # Gems
 gems:
     - jekyll-sitemap
+    - jekyll-assets
