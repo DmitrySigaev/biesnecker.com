@@ -7,9 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
   {% include fb_og_tags.html %}
   {% if site.serving %}
-    {% javascript vendor/react %}
+    {% javascript app %}
   {% else %}
-    {% javascript vendor/react.min %}
+    {% javascript app.min %}
   {% endif %}
 
   <title>
