@@ -4,7 +4,6 @@ title: MLB team colors in hexadecimal
 image: /public/images/mlb_logos.jpg
 summary: >
     You might never need to know the hexadecimal values of your favorite baseball team's colors, but if you do, this is your jam. More importantly, it's a good opportunity to play with React.js, Facebook's open source javascript framework.
-include_react: true
 ---
 
 <div id="mlb-colors-root"></div>
