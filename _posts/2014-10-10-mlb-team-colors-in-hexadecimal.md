@@ -17,4 +17,4 @@ Have you ever been watching a baseball game and thought "you know what, those ga
 
 But seriously --
 
-This is my very first React.js project. It's not much to look at, but it took a while to figure out how things are supposed to go together. I think I understand it a little more than I did a couple of hours, though, and I'm looking forward to seeing what other things I can write in Javascript in the future. Definitely a nice weapon to have in my arsenal.
+This is my very first [React.js](http://facebook.github.io/react/) project. It's not much to look at, but it took a while to figure out how things are supposed to go together. I think I understand it a little more than I did a couple of hours, though, and I'm looking forward to seeing what other things I can write in Javascript in the future. Definitely a nice weapon to have in my arsenal.
