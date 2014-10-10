@@ -398,27 +398,28 @@ var ColorCell = React.createClass({
 var ColorGrid = React.createClass({
     render: function() {
         var grid;
+        var team_code = this.props.team;
         var colors = this.props.colors;
         switch(colors.length) {
             case 1:
                 grid = <tr>
-                    <ColorCell color={ colors[0] } />
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <ColorCell key={team_code + '1'} color={ colors[0] } />
+                    <td key={team_code + '2'}>&nbsp;</td>
+                    <td key={team_code + '3'}>&nbsp;</td>
                 </tr>;
                 break;
             case 2:
                 grid = <tr>
-                    <ColorCell color={ colors[0] } />
-                    <ColorCell color={ colors[1] } />
-                    <td>&nbsp;</td>
+                    <ColorCell key={team_code + '1'} color={ colors[0] } />
+                    <ColorCell key={team_code + '2'} color={ colors[1] } />
+                    <td key={team_code + '3'}>&nbsp;</td>
                 </tr>;
                 break;
             default:
                 grid = <tr>
-                    <ColorCell color={ colors[0] } />
-                    <ColorCell color={ colors[1] } />
-                    <ColorCell color={ colors[2] } />
+                    <ColorCell key={team_code + '1'} color={ colors[0] } />
+                    <ColorCell key={team_code + '2'} color={ colors[1] } />
+                    <ColorCell key={team_code + '3'} color={ colors[2] } />
                 </tr>;
                 break;
         }
@@ -432,11 +433,17 @@ var ColorSwatch = React.createClass({
         var team_data = this.props.teams[team_code];
         var rows = []
         rows.push(
-            <ColorGrid key="0" colors={ team_data['colors'].slice(0,3) } />
+            <ColorGrid
+                key="0"
+                team={team_code}
+                colors={ team_data['colors'].slice(0,3) } />
         );
         if (team_data['colors'].length > 3) {
             rows.push(
-                <ColorGrid key="1" colors={ team_data['colors'].slice(3,6) } />
+                <ColorGrid
+                    key="1"
+                    team={team_code}
+                    colors={ team_data['colors'].slice(3,6) } />
             );
         }
 
