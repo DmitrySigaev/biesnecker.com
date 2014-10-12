@@ -10,7 +10,7 @@ A common question on technical interviews is "provide a method to calculate the 
 
 ### Heron's method
 
-Heron's method is attributed to [Hero of Alexandria](http://en.wikipedia.org/wiki/Hero_of_Alexandria), though it was probably known by Babylonian mathematicians before that. The algorithm starts with a bad estimate of the square root (in this case, dividing the number by 3, though there are better ways to make this initial estimate, as described below), and iterates until the difference between successive guesses is smaller than the desired precision.
+Heron's method is attributed to [Hero of Alexandria](http://en.wikipedia.org/wiki/Hero_of_Alexandria), though it was probably known by Babylonian mathematicians before that. The algorithm starts with a bad estimate of the square root (in this case, dividing the number by 3 -- there are better ways of making an initial guess, but that's going to be left as homework for the industrious reader), and iterates until the difference between successive guesses is smaller than the desired precision.
 
 {% highlight python %}
 def heron_sqrt(n, precision=0.000000000001):
