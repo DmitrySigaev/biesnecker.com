@@ -2,5 +2,14 @@
  *= require vendor/poole
  *= require vendor/syntax
  *= require vendor/lanyon
+ *= require vendor/iconic
 */
 
+#reading_time_mount {
+    text-align:right;
+    font-size:85%;
+}
+
+#reading_time_mount .clock {
+    color: #c0c0c0;
+}

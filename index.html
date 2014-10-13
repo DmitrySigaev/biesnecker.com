@@ -19,6 +19,10 @@ include_react: true
     <p><img src="{{ post.image }}" alt="" /></p>
     {{ endif }}
 
+    {% unless site.serving %}
+    <p class="fb-like" data-href="{{ site.url }}{{ post.url }}" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></p>
+    {% endunless %}
+
     {{ post.content }}
   </div>
   {% endfor %}

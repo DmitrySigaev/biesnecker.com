@@ -49,4 +49,4 @@ Because I only use `jekyll server` while I'm writing locally, I use the existenc
 
 ### Conclusion
 
-Because React components are standalone and don't expect very much from they're environment, it's a perfect framework for building interactive components that are part of an otherwise normal page. Getting the JSX transformation process built directly into my Jekyll workflow saves a ton of headaches, and makes it a lot more likely that I'll play around with it more in the future. Hopefully this short guide will encourage others to do the same.
+Because React components are standalone and don't expect very much from their environment, it's a perfect framework for building interactive components that are part of an otherwise normal page. Getting the JSX transformation process built directly into my Jekyll workflow saves a ton of headaches, and makes it a lot more likely that I'll play around with it more in the future. Hopefully this short guide will encourage others to do the same.
