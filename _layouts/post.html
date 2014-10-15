@@ -39,6 +39,19 @@ layout: default
   {% endunless %}
 </div>
 
+<div class="pagination">
+  {% if page.previous %}
+    <a class="pagination-item older" href="{{ site.baseurl }}{{page.next.url }}">Older</a>
+  {% else %}
+    <span class="pagination-item older">Older</span>
+  {% endif %}
+  {% if page.next %}
+    <a class="pagination-item newer" href="{{ site.baseurl }}{{page.next.url }}">Newer</a>
+  {% else %}
+    <span class="pagination-item newer">Newer</span>
+  {% endif %}
+</div>
+
 {% comment %}
 {% if site.related_posts %}
 <div class="related">
