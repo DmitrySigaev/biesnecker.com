@@ -8,7 +8,12 @@ layout: default
   {{ endif }}
 
   <h1 class="post-title">{{ page.title }}</h1>
-  <p id="reading_time_mount"></p><br />
+  <p id="reading_time_mount"></p>
+
+  {% unless site.serving %}
+  <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1673&amp;serve=C6AILKT&amp;placement=biesnecker" id="_carbonads_js"></script>
+  <br style="clear:both" />
+  {% endunless %}
 
   <div id="main_content">
   {{ content }}

@@ -12,3 +12,47 @@
 #reading_time_mount .clock {
     color: #c0c0c0;
 }
+
+#carbonads {
+    font-size:85%;
+    background-color:#eee;
+    padding:0px;
+    border-radius:5px;
+}
+
+#carbonads:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: "";
+  clear: both;
+  height: 0;
+}
+
+#carbonads a {
+    color:#666;
+    text-decoration:none;
+}
+
+#carbonads a.carbon-poweredby {
+    color:#999;
+    font-size:90%;
+}
+
+.carbon-wrap {
+    display:block;
+}
+
+.carbon-wrap .carbon-text {
+    display:block;
+    padding-top:10px;
+}
+
+.carbon-img img {
+    float:left;
+    border-radius:0px;
+    padding-right:10px;
+    margin:0px;
+}
+
+
