@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-
 <div class="post">
   {{ if page.image }}
   <p><img src="{{ page.image }}" alt="" /></p>
@@ -41,7 +40,7 @@ layout: default
 
 <div class="pagination">
   {% if page.previous %}
-    <a class="pagination-item older" href="{{ site.baseurl }}{{page.next.url }}">Older</a>
+    <a class="pagination-item older" href="{{ site.baseurl }}{{page.previous.url }}">Older</a>
   {% else %}
     <span class="pagination-item older">Older</span>
   {% endif %}
