@@ -5,6 +5,11 @@
  *= require vendor/iconic
 */
 
+.outline_box {
+  border:1px #c0c0c0 solid;
+  padding:10px;
+}
+
 #reading_time_mount {
     font-size:85%;
 }

@@ -38,6 +38,13 @@ layout: default
   {% endunless %}
 </div>
 
+{% if page.medium_id %}
+<div class="medium_box">
+<h3>Also available on Medium.com</h3>
+<div id="medium_embed_box"><script async src="https://static.medium.com/embed.js"></script><a class="m-story" data-collapsed="true" href="https://medium.com/@biesnecker/{{page.medium_id}}">{{ page.title }}</a></div>
+</div>
+{% endif %}
+
 <div class="pagination">
   {% if page.previous %}
     <a class="pagination-item older" href="{{ site.url }}{{page.previous.url }}">Older</a>

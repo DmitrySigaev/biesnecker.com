@@ -1,11 +1,37 @@
+{% if page.fb_app_id %}
+  {% if site.serving %}
+    {% assign facebook_app_id = page.fb_app_id %}
+  {% else %}
+    {% assign facebook_app_id = page.fb_test_app_id %}
+  {% endif %}
+{% else %}
+  {% if site.serving %}
+    {% assign facebook_app_id = '743581075722666' %}
+  {% else %}
+    {% assign facebook_app_id = '737512829662824' %}
+  {% endif %}
+{% endif %}
+
 <script>
+  {% if page.parse %}
+  Parse.initialize('{{page.parse_app_id}}', '{{page.parse_js_key}}');
+  window.fbAsyncInit = function() {
+    Parse.FacebookUtils.init({
+      appId      : '{{facebook_app_id}}',
+      xfbml      : true,
+      cookie     : true,
+      version    : 'v2.1'
+    });
+  };
+  {% else %}
   window.fbAsyncInit = function() {
     FB.init({
-      appId      : '737512829662824',
+      appId      : '{{facebook_app_id}}',
       xfbml      : true,
       version    : 'v2.1'
     });
   };
+  {% endif %}
 
   (function(d, s, id){
      var js, fjs = d.getElementsByTagName(s)[0];

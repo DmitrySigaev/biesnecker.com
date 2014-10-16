@@ -8,9 +8,17 @@
   {% include fb_og_tags.html %}
   {% include twitter_card_tags.html %}
   {% if site.serving %}
-    {% javascript app %}
+    {% if page.parse %}
+      {% javascript app_with_parse %}
+    {% else %}
+      {% javascript app %}
+    {% endif %}
   {% else %}
-    {% javascript app.min %}
+    {% if page.parse %}
+      {% javascript app_with_parse.min %}
+    {% else %}
+      {% javascript app.min %}
+    {% endif %}
   {% endif %}
 
   <title>

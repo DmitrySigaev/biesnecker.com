@@ -4,6 +4,7 @@ title: Projects fail slowly, and then all at once
 image: /public/images/failure_slow_and_fast.jpg
 summary: >
     Nobody starts a project expecting it to fail, and that's a problem. Most projects are going to fail, and not recognizing that at the outset causes people to continue investing in lost causes for far too long. Understanding the way that failing projects fail is an important step in avoiding this costly mistake.
+medium_id: 11897f722042
 ---
 
 First, an assertion: most projects that are sufficiently ambitious will fail. If they don't, your definition of 'ambitious' is probably not strong enough. This is true despite your best efforts, because you're doing things that haven't been done before, that you're not even sure are possible, let alone doable with the people and technologies to which you have access.

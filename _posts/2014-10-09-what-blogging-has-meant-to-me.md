@@ -4,6 +4,7 @@ title: What blogging has meant to me
 image: /public/images/dave_winer.jpg
 summary: >
     I've been blogging in one way or another for nearly half my life. I haven't taken a "conventional" path, but it's been a journey that has meant a lot to me, and now is as good a time as any to reflect on it.
+medium_id: 947ebaabe66a
 ---
 
 It's the [20th anniversary of Dave Winer's proto-blog](http://scripting.com/2014/10/07/20YearsOfBlogging.html) (the email list that would eventually become what would eventually be called a blog), and this has made me reflect on what blogging has meant to me.
