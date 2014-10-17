@@ -25,6 +25,7 @@ var ReadingTimeWidget = React.createClass({
         if (this.state.secondsRequired !== null) {
             var seconds = this.state.secondsRequired;
             var minutes = Math.round(seconds / 60);
+            minutes = minutes < 1 ? 1 : minutes;
             message = minutes + ' minute read';
         } else {
             message = 'Calculating reading time...';
