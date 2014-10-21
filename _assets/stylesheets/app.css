@@ -5,6 +5,10 @@
  *= require vendor/iconic
 */
 
+.twitter-tweet {
+  margin-bottom:1.5em !important;
+}
+
 .outline_box {
   border:1px #c0c0c0 solid;
   padding:10px;

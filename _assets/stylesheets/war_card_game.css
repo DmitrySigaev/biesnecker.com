@@ -1,0 +1,22 @@
+#war_game_component {
+    background: #fff url('/public/images/card_felt_bg.jpg');
+    border-radius: 5px;
+    padding:20px;
+}
+
+#war_game_component table {
+    margin-bottom:0px;
+}
+
+#war_game_component button {
+    padding:10px;
+}
+
+#war_game_component tbody tr:nth-child(odd) td, #war_game_component td {
+    background-color:rgba(0,0,0,0) !important;
+    color:#fff;
+}
+
+.center-align {
+    text-align:center;
+}
