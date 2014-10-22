@@ -8,9 +8,13 @@ var GameStatus = {
 
 var Suits = ['H', 'D', 'C', 'S'];
 var Cards = [];
+var image_preload = [];
 for (var i = 2; i < 15; i++) {
     for (var j = 0; j < Suits.length; j++) {
-        Cards.push(i + '_' + Suits[j]);
+        var key = i + '_' + Suits[j];
+        Cards.push(key);
+        image_preload[key] = new Image();
+        image_preload[key].src = '/public/images/cards/' + key.replace('_', '') + '.svg';
     }
 }
 
