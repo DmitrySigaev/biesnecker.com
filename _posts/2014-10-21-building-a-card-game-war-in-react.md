@@ -10,7 +10,7 @@ When I was a little kid I loved to play War (the card game). I didn't realize it
 
 As I've been [playing](http://biesnecker.com/2014/10/16/how-likely-is-it-that-my-team-will-win/) with [React.js](http://facebook.github.io/react/), I've been thinking about making board games with it. A board game is essentially a way to manage state information about the game being played, and that is easily modeled with React. Yesterday I stumbled on a post about [someone who modeled a rather complex board game using React](http://jjt.io/2014/07/30/building-a-board-game-with-react-js/), and was inspired to try something of my own. That said, I'm still in the baby steps period of my relationship with frontend development, and wanted to tackle something a little simpler.
 
-As games go, War definitely qualifies as "a little simpler" (if you're unfamiliar with the rules, go here).
+As games go, War definitely qualifies as "a little simpler" (if you're unfamiliar with the rules, [go here](http://www.pagat.com/war/war.html)).
 
 This post will walk through the steps I took to build it (indeed, I'm writing this post as I'm building the game), with the final game at the bottom.
 
