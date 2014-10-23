@@ -4,6 +4,7 @@ title: The one where my company failed
 image: /public/images/smoggy_road.jpg
 summary: >
     I tried, and I failed. I was incredibly naive about the amount of work that it would take, and I was incredibly naive in my understanding of what drives me and what I'm passionate about. It sucked. But it's better now.
+medium_id: 74c1fe78ec0
 ---
 
 I haven't told this story very often, but was inspired to by my friend Frank Fradella's difficult and honest [post-mortem of his failed startup](https://medium.com/@frankfradella/10-things-i-learned-running-a-startup-9c15571008ae). As a culture we talk about failing fast and embracing risk, but for the individual failure fucking sucks. It might be part of the job, and is definitely what makes [the startup scene as a whole work](https://medium.com/@biesnecker/startups-are-fragile-but-the-startup-community-is-antifragile-74858b446ef4), but that doesn't make it suck any less. Talking about it is cathartic, though, and does indeed reduce the suck. So I'm going to talk about it.
