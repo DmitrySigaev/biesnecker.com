@@ -4,6 +4,7 @@ title: Thoughts on reusing and reimplementing
 image: /public/images/rebuilding.jpg
 summary: >
     Alternate title: how I spent the better part of a week with Gulp.js, before abandoning it and writing something that better fit my needs, in a few words.
+medium_id: 9ecf9def2f58
 ---
 
 This is a common experience that I suspect most of you have had:

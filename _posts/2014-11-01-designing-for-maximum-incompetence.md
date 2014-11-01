@@ -4,6 +4,7 @@ title: Designing for maximum incompetence
 image: /public/images/three_stooges.jpg
 summary: >
     As a periodically incompetent person myself, one of the tenets of my design philosophy (in many areas, though especially software) is to design for maximum incompetence -- never ever assume that the person using what you've built will be anywhere near competent, and make sure that your product will work just fine regardless.
+medium_id: 69a4eae489aa
 ---
 
 [Educating your users](http://www.smashingmagazine.com/2008/01/16/evolve-your-user-interface-to-educate-your-users/) is an important design concept, but as someone who writes a lot of code for himself, I believe that the single most important thing that you can do is to design for maximum incompetence. By assuming that the users of your systems are incompetent (even though they most likely aren't) you're forced to think of sane defaults and behaviors that work correctly without hand-holding. This results in more robust applications that are less likely to need constant attention in order to continue running. This thought was inspired by a very interesting article about the [difference between North American and Japanese zoning laws](http://urbankchoze.blogspot.com/2014/04/japanese-zoning.html):
