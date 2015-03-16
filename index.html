@@ -4,8 +4,16 @@ title: Home
 include_react: true
 ---
 
+{% assign show_ad = true %}
 <div class="posts">
   {% for post in paginator.posts %}
+  {% if show_ad %}
+  {% unless site.serving %}
+    <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1673&amp;serve=C6AILKT&amp;placement=biesnecker" id="_carbonads_js"></script>
+    <br style="clear:both" />
+    {% assign show_ad = false %}
+  {% endunless %}
+  {% endif %}
   <div class="post">
     <h1 class="post-title">
       <a href="{{ post.url }}">
@@ -25,6 +33,7 @@ include_react: true
 
     <p>{{ post.summary }} <a href="{{ site.url }}{{ post.url }}">Read more</a> &rarr;</p>
   </div>
+  
   {% endfor %}
 </div>
 
