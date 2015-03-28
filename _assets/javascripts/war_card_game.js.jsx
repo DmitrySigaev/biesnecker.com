@@ -244,7 +244,7 @@ var WarGameComponent = React.createClass({
     }
 });
 
-React.renderComponent(
+React.render(
     <WarGameComponent />,
     document.getElementById('war')
 );

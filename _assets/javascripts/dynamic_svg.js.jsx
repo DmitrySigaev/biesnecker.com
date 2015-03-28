@@ -2,49 +2,37 @@
 
 var SVGComponent = React.createClass({
     render: function() {
-        return this.transferPropsTo(
-            <svg>{this.props.children}</svg>
-        );
+        return <svg {...this.props}>{this.props.children}</svg>;
     }
 });
 
 var Rectangle = React.createClass({
     render: function() {
-        return this.transferPropsTo(
-            <rect>{this.props.children}</rect>
-        );
+        return <rect {...this.props}>{this.props.children}</rect>;
     }
 });
 
 var Circle = React.createClass({
     render: function() {
-        return this.transferPropsTo(
-            <circle>{this.props.children}</circle>
-        );
+        return <circle {...this.props}>{this.props.children}</circle>;
     }
 });
 
 var Ellipse = React.createClass({
     render: function() {
-        return this.transferPropsTo(
-            <ellipse>{this.props.children}</ellipse>
-        );
+        return <ellipse {...this.props}>{this.props.children}</ellipse>;
     }
 });
 
 var Line = React.createClass({
     render: function() {
-        return this.transferPropsTo(
-            <line>{this.props.children}</line>
-        );
+        return <line {...this.props}>{this.props.children}</line>;
     }
 });
 
 var Polyline = React.createClass({
     render: function() {
-        return this.transferPropsTo(
-            <polyline>{this.props.children}</polyline>
-        );
+        return <polyline {...this.props}>{this.props.children}</polyline>;
     }
 });
 
@@ -139,13 +127,13 @@ var DynamicSVGComponent = React.createClass({
 });
 
 // First example
-React.renderComponent(
+React.render(
     <SVGComponent height="50" width="50" />,
     document.getElementById('svg_mount_example')
 );
 
 // Rectangle example
-React.renderComponent(
+React.render(
     <SVGComponent height="100" width="100">
         <Rectangle height="50" width="50" x="25" y="25" />
     </SVGComponent>,
@@ -154,7 +142,7 @@ React.renderComponent(
 
 // Circle example
 
-React.renderComponent(
+React.render(
     <SVGComponent height="100" width="100">
         <Circle cx="50" cy="50" r="25" />
     </SVGComponent>,
@@ -163,7 +151,7 @@ React.renderComponent(
 
 // Ellipse example
 
-React.renderComponent(
+React.render(
     <SVGComponent height="100" width="100">
         <Ellipse cx="50" cy="50" rx="25" ry="15" />
     </SVGComponent>,
@@ -172,7 +160,7 @@ React.renderComponent(
 
 // Colors example
 
-React.renderComponent(
+React.render(
     <SVGComponent height="100" width="230">
         <Circle
             cx="50" cy="50" r="25"
@@ -190,7 +178,7 @@ React.renderComponent(
 
 // Straight line example
 
-React.renderComponent(
+React.render(
     <SVGComponent height="100" width="100">
         <Line x1="25" y1="25" x2="75" y2="75"
             strokeWidth="5"
@@ -201,7 +189,7 @@ React.renderComponent(
 
 // Polyline example
 
-React.renderComponent(
+React.render(
     <SVGComponent height="100" width="100">
         <Polyline
             points="25,25 25,75 50,75 50,50 75,25"
@@ -214,7 +202,7 @@ React.renderComponent(
 
 // Final example
 
-React.renderComponent(
+React.render(
     <DynamicSVGComponent />,
     document.getElementById('dynamic_svg')
 );

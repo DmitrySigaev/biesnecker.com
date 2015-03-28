@@ -100,7 +100,7 @@ if (window.fbAsyncInit.hasRun === true) {
 }
 
 function mountApp() {
-    React.renderComponent(
+    React.render(
         <FBLoginComponent />,
         document.getElementById('fb_login_example_mount')
     );

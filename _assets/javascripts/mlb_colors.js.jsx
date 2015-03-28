@@ -298,13 +298,13 @@ var color_data = {
 
 var TeamCell = React.createClass({
     handleClick: function(e) {
-        this.props.onUpdate(this.props.key);
+        this.props.onUpdate(this.props.team['shortname']);
     },
     render: function() {
         var cellstyle = {
-            'text-align': 'center',
+            'textAlign': 'center',
             'color': '#FFFFFF',
-            'background-color': this.props.team['colors'][0],
+            'backgroundColor': this.props.team['colors'][0],
         };
         var spanstyle = {
             'cursor': 'pointer',
@@ -312,7 +312,7 @@ var TeamCell = React.createClass({
         return (
             <td style={cellstyle}>
                 <span onClick={ this.handleClick } style={spanstyle}>
-                    {this.props.key}
+                    {this.props.team['shortname']}
                 </span>
             </td>
         );
@@ -325,7 +325,7 @@ var DivisionMenuRow = React.createClass({
         var onUpdate = this.props.onUpdate
         cells = []
         cells.push(
-            <td key={this.props.key}>{this.props.key}</td>
+            <td key={this.props.div}>{this.props.div}</td>
         );
         for (var idx = 0; idx < this.props.teams.length; idx++) {
             cells.push(
@@ -349,11 +349,11 @@ var TeamMenu = React.createClass({
             var dat = this.props.data;
             var teams = dat['American'][d].concat(dat['National'][d]);
             drows.push(
-                <DivisionMenuRow key={d} teams={teams} onUpdate={onUpdate} />
+                <DivisionMenuRow key={d} div={d} teams={teams} onUpdate={onUpdate} />
             );
         }
         var tablestyle = {
-            'font-size': '75%'
+            'fontSize': '75%'
         }
         return (
             <table style={tablestyle}>
@@ -376,7 +376,7 @@ var ColorCell = React.createClass({
     render: function() {
         var color = this.props.color;
         var text_color = "#FFFFFF";
-        var text_shadow = '1px 1px #000000;'
+        var text_shadow = '1px 1px #000000'
         if (this.props.color == '#FFFFFF' ||
                 this.props.color == '#FFFDD0') {
             text_color = "#000000";
@@ -384,9 +384,9 @@ var ColorCell = React.createClass({
         }
         var cellstyle = {
             'color': text_color,
-            'text-shadow': text_shadow,
-            'background-color': color,
-            'text-align': 'center',
+            'textShadow': text_shadow,
+            'backgroundColor': color,
+            'textAlign': 'center',
         };
         return (
             <td width="33.33%" style={cellstyle}>{color}</td>
@@ -496,7 +496,7 @@ var ColorDashboard = React.createClass({
     }
 });
 
-React.renderComponent(
+React.render(
     <ColorDashboard data={color_data} />,
     document.getElementById('mlb-colors-root')
 );

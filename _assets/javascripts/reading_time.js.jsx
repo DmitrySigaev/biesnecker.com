@@ -1,5 +1,3 @@
-/** @jsx React.DOM */
-
 var ReadingTimeWidget = React.createClass({
     getInitialState: function() {
         return ({
@@ -40,12 +38,9 @@ var ReadingTimeWidget = React.createClass({
 });
 
 $(document).ready(function() {
-    var mountPoint = $('#reading_time_mount');
-    if (mountPoint) {
-        var contentDiv = $('#main_content');
+    var contentDiv = $('#main_content');
 
-        React.renderComponent(
-            <ReadingTimeWidget contentDiv={contentDiv} wpm={200} />,
-            mountPoint.get(0));
-    }
+    React.render(
+        <ReadingTimeWidget contentDiv={contentDiv} wpm={200} />,
+        document.getElementById('reading_time_mount'));
 });

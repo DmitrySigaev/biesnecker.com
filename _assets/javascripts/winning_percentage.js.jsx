@@ -251,6 +251,6 @@ var WinningPercentageComponent = React.createClass({
     }
 });
 
-React.renderComponent(
+React.render(
     <WinningPercentageComponent />,
     $('#winning_percentage_component').get(0));
