@@ -2,5 +2,5 @@
 
 jekyll build
 cd _site
-s3cmd sync --recursive . s3://biesnecker.com/ --delete-removed
+s3cmd sync --recursive . s3://biesnecker.com/ --delete-removed --cf-invalidate
 cd ..

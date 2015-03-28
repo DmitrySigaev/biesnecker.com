@@ -17,13 +17,11 @@ SVGs live inside `svg` tags, so the first step is to create a simple component t
 {% highlight javascript %}
 var SVGComponent = React.createClass({
     render: function() {
-        return this.transferPropsTo(
-            <svg>{this.props.children}</svg>
-        );
+        return <svg {...this.props}>{this.props.children}</svg>;
     }
 });
 
-React.renderComponent(
+React.render(
     <SVGComponent height="50" width="50" />,
     document.getElementById('svg_mount_example')
 );
@@ -42,13 +40,11 @@ Of course, it's blank, so it's not very exciting yet, but if you inspect it you'
 {% highlight javascript %}
 var Rectangle = React.createClass({
     render: function() {
-        return this.transferPropsTo(
-            <rect>{this.props.children}</rect>
-        );
+        return <rect {...this.props}>{this.props.children}</rect>;
     }
 });
 
-React.renderComponent(
+React.render(
     <SVGComponent height="100" width="100">
         <Rectangle height="50" width="50" x="25" y="25" />
     </SVGComponent>,
@@ -63,13 +59,11 @@ React.renderComponent(
 {% highlight javascript %}
 var Circle = React.createClass({
     render: function() {
-        return this.transferPropsTo(
-            <circle>{this.props.children}</circle>
-        );
+        return <circle {...this.props}>{this.props.children}</circle>;
     }
 });
 
-React.renderComponent(
+React.render(
     <SVGComponent height="100" width="100">
         <Circle cx="50" cy="50" r="25" />
     </SVGComponent>,
@@ -84,13 +78,11 @@ React.renderComponent(
 {% highlight javascript %}
 var Ellipse = React.createClass({
     render: function() {
-        return this.transferPropsTo(
-            <ellipse>{this.props.children}</ellipse>
-        );
+        return <ellipse {...this.props}>{this.props.children}</ellipse>;
     }
 });
 
-React.renderComponent(
+React.render(
     <SVGComponent height="100" width="100">
         <Ellipse cx="50" cy="50" rx="25" ry="15" />
     </SVGComponent>,
@@ -112,7 +104,7 @@ The two most useful SVG color parameters are:
 Below is an example of these color properties, specified in several different ways.
 
 {% highlight javascript %}
-React.renderComponent(
+React.render(
     <SVGComponent height="100" width="230">
         <Circle
             cx="50" cy="50" r="25"
@@ -140,13 +132,11 @@ SVG supports a [huge number](http://www.w3.org/TR/SVG/painting.html) of color an
 {% highlight javascript %}
 var Line = React.createClass({
     render: function() {
-        return this.transferPropsTo(
-            <line>{this.props.children}</line>
-        );
+        return <line {...this.props}>{this.props.children}</line>;
     }
 });
 
-React.renderComponent(
+React.render(
     <SVGComponent height="100" width="100">
         <Line x1="25" y1="25" x2="75" y2="75"
             strokeWidth="5"
@@ -163,13 +153,11 @@ React.renderComponent(
 {% highlight javascript %}
 var Polyline = React.createClass({
     render: function() {
-        return this.transferPropsTo(
-            <polyline>{this.props.children}</polyline>
-        );
+        return <polyline {...this.props}>{this.props.children}</polyline>;
     }
 });
 
-React.renderComponent(
+React.render(
     <SVGComponent height="100" width="100">
         <Polyline
             points="25,25 25,75 50,75 50,50 75,25"
