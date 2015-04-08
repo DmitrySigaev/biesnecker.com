@@ -6,6 +6,8 @@ summary: >
   I was looking for an actor model implementation based on Python 3.4's asyncio. I didn't find one, so I built one.
 ---
 
+Update (4/7): 欢迎来自于[蠎周刊](http://weekly.pychina.org/issue/issue-160.html)的朋友！
+
 The [actor model](http://en.wikipedia.org/wiki/Actor_model) is a conceptually simple way of managing concurrency, in which each object stands alone, passing only messages between one another. For a recent project I was looking for an actor implementation based on Python's new asyncio library, and couldn't find one, so I made one myself.
 
 Introducing [cleveland](https://github.com/biesnecker/cleveland), named in honor of [Carol Cleveland](http://en.wikipedia.org/wiki/Carol_Cleveland) (pictured above), the only major female cast member of _Monty Python's Flying Circus_.
