@@ -9,6 +9,10 @@ layout: page
     {% assign pname='blog' %}
 {% endif %}
 
+{% if page.description %}
+<p><small><em>{{ page.description }}</em></small></p>
+{% endif %}
+
 <p>This {{ pname }} contains {{ p | size | pluralize: "post" }}.</p>
 
 {% assign current_year = '0' %}

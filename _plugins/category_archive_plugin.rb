@@ -92,15 +92,27 @@ module Jekyll
 {% for post in page.posts %}<li><a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}"><span>{{ post.title }}<span></a></li>
 {% endfor %}
       EOS
+      # Customize the title
+      if site.config['categories'] && site.config['categories'][@category]
+          category_title = site.config['categories'][@category]['title']
+      else
+          category_title = @category
+      end
       self.data = {
           'layout' => @layout,
           'type' => 'archive',
-          'title' => "Category archive for #{@category}",
+          'title' => category_title,
           'posts' => posts,
           'url' => File.join('/',
                      CategoryArchiveUtil.archive_base(site),
                      @category_dir_name, 'index.html')
       }
+      if site.config['categories'] && site.config['categories'][@category]
+          if site.config['categories'][@category]['description']
+              self.data['description'] = site.config['categories'][@category]['description']
+          end
+      end
+
     end
 
     def render(layouts, site_payload)

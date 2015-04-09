@@ -34,3 +34,9 @@ exclude:             ['publish.sh', 'push.sh']
 gems:
     - jekyll-sitemap
     - jekyll-assets
+
+categories:
+    sweiqotd:
+        title: "Software Engineering Interview Question of the Day"
+        description: >
+            SWEIQotD is a (semi-) daily series of questions and detailed answers for the kind of questions one tends to face during software engineering interviews. It is mostly for me, but I thought it might be useful for others so I'm posting them.
