@@ -12,7 +12,7 @@ relative_permalinks: true
 title:               John Biesnecker
 tagline:             '世界潮流顺之者'
 description:         'Ideas and opinions about people, pleaces, and things (mostly code).'
-url:                 http://biesnecker.com
+url:                 https://biesnecker.com
 baseurl:             /
 paginate:            10
 future:              false
