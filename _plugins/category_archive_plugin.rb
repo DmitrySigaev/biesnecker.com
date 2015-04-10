@@ -35,7 +35,9 @@ module Jekyll
 
     def posts_group_by_category(site)
       category_map = {}
-      site.posts.each {|p| p.categories.each {|c| (category_map[c] ||= []) << p } }
+      site.posts.reverse.each {|p| 
+          p.categories.each {|c| 
+              (category_map[c] ||= []) << p } }
       category_map
     end
   end
@@ -88,10 +90,7 @@ module Jekyll
       @layout =  site.config['category_archive'] && site.config['category_archive']['layout'] || 'archive'
       self.ext = '.html'
       self.basename = 'index'
-      self.content = <<-EOS
-{% for post in page.posts %}<li><a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}"><span>{{ post.title }}<span></a></li>
-{% endfor %}
-      EOS
+      
       # Customize the title
       if site.config['categories'] && site.config['categories'][@category]
           category_title = site.config['categories'][@category]['title']
