@@ -17,46 +17,21 @@ layout: default
   <div id="main_content">
   {{ content }}
   </div>
+  
+  {% capture url %}{{ site.url }}{{ page.url }}{% endcapture %}
+  <h3>Share</h3>
+  <p>If you enjoyed this post, please share it with others who would also enjoy it.</p>
+  <p>
+    <a class="symbol" style="color:#3b5998;" href="http://www.facebook.com/sharer.php?u={{url}}">&#xe227;</a>
+    <a class="symbol" style="color:#00aced;" href="https://twitter.com/share?url={{url}}&text={{page.title}}&via=biesnecker">&#xe287;</a>
+    <a class="symbol" style="color:#ff4500;" href="http://reddit.com/submit?url={{url}}&title={{page.title}}">&#xe269;</a>
+    {% if page.image %}
+    <a class="symbol" style="color:#cb2027;" href="https://pinterest.com/pin/create/bookmarklet/?media={{site.url}}{{page.image}}&url={{url}}&is_video=false&description={{page.title}}">&#xe264;</a>
+    {% endif %}
+  </p>
 
-  {% unless site.serving %}
-  <br />
-  <div class="message">
-    <!-- Begin MailChimp Signup Form -->
-    <style type="text/css">
-      #mc_embed_signup{background-color:inherit !important; clear:left; font:14px Helvetica,Arial,sans-serif; }
-      /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-         We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-    </style>
-    <div id="mc_embed_signup">
-    <form action="//dev.us6.list-manage.com/subscribe/post?u=4104bcb6334bf59a924f6dd3d&amp;id=c13ad04675" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-        <div id="mc_embed_signup_scroll">
-      <label for="mce-EMAIL">Subscribe to weekly email newsletters</label>
-      <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-        <div style="position: absolute; left: -5000px;"><input type="text" name="b_4104bcb6334bf59a924f6dd3d_c13ad04675" tabindex="-1" value=""></div>
-        <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-        </div>
-    </form>
-    </div>
-
-    <!--End mc_embed_signup-->
-  </div><br />
-  <div class="message">
-    <p>Did you enjoy this post? If so, I would <strong>really appreciate it</strong> if you'd share it with your friends.</p>
-
-    <p class="fb-like" data-href="{{ site.url }}{{ page.url }}" data-width="100%" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></p>
-
-    <p>Or discuss it on Reddit!</p>
-
-    <p><a href="//www.reddit.com/submit" onclick="window.location = '//www.reddit.com/submit?url=' + encodeURIComponent(window.location); return false"><img src="//www.redditstatic.com/spreddit7.gif" alt="submit to reddit" border="0" /></a></p>
-
-    <p>If you'd like more interesting content, you should considering following me on Facebook because I'm full of good ideas :-). <strong>Thank you!</strong></p>
-
-    <p class="fb-follow" data-href="https://www.facebook.com/biesnecker" data-width="100%" data-colorscheme="light" data-layout="standard" data-show-faces="true"></p>
-  </div>
   <h3>Comments</h3>
-  <div class="fb-comments" data-href="{{ site.url }}{{ page.url }}" data-numposts="5" data-colorscheme="light" data-width="100%"></div>
-  {% endunless %}
+  <div class="fb-comments" data-href="{{ url }}" data-numposts="5" data-colorscheme="light" data-width="100%"></div>
 </div>
 
 {% if page.medium_id %}
@@ -78,23 +53,3 @@ layout: default
     <span class="pagination-item newer">Newer</span>
   {% endif %}
 </div>
-
-{% comment %}
-{% if site.related_posts %}
-<div class="related">
-  <h2>Related Posts</h2>
-  <ul class="related-posts">
-    {% for post in site.related_posts limit:3 %}
-      <li>
-        <h3>
-          <a href="{{ site.url }}{{ post.url }}">
-            {{ post.title }}
-            <small>{{ post.date | date_to_string }}</small>
-          </a>
-        </h3>
-      </li>
-    {% endfor %}
-  </ul>
-</div>
-{% endif %}
-{% endcomment %}
